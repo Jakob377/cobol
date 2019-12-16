@@ -1,0 +1,17 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. CIRCUMFERENCE AS "CIRCUMFERENCE".
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+           01 CIRCLE.
+               05 WS-PI-VALUE PIC 9V9(4) VALUE 3.1415.
+               05 WS-DIAMETER PIC 9(3).
+               05 WS-TOTAL-CIRCUMFERENCE PIC 9(2)V9(3).
+       PROCEDURE DIVISION.
+           DISPLAY "Enter the diameter of the circle: ".
+           ACCEPT WS-DIAMETER.
+           COMPUTE WS-TOTAL-CIRCUMFERENCE = WS-DIAMETER * WS-PI-VALUE.
+           DISPLAY "Circumference =" WS-TOTAL-CIRCUMFERENCE.
+           STOP RUN.
+       END PROGRAM CIRCUMFERENCE.
+
+
